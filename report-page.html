@@ -41,12 +41,16 @@
   /* background-color:#a4beee; */
   border-radius: 25px!important;
 
-  /* box-shadow: 0 0 0 0.2rem rgba(40, 146, 167, 0.25); */
+
 
 
   background-color:#5394aa;
   padding: 20px;
   text-align: center;
+  }
+
+  .custom-stretched-div{
+    border-radius: 25px!important;
   }
 
   .flex-container {
@@ -60,6 +64,7 @@
 
 .custom-height-strecthed-div{
   height: 215px!important;
+  width: 300px!important;
   border-radius: 25px!important;
 }
 
@@ -72,13 +77,30 @@
 .fontsize1{
   font-size: 24px!important;
 }
+
+@media only screen and (max-width: 572px) {
+        /* body{
+          background-color: aqua;
+        } */
+       /* .mblrespnsive{
+        height: 500px!important; 
+        
+      }  */
+     /* .card {
+      height: auto;
+    } */
+  
+  .mblrespnsive2{
+    margin-left: 30px!important;
+  }
+  }
  </style>
 
   </head>
   <body>
 <header>
   
-  <div class="container-fluid p-1   text-center  text-primary">
+  <div class="container-fluid p-1  text-secondary text-center  text-primary">
   <h1>Weekly Sales Report of Sales Executive 01 (Week 01/January/2023)</h1>
 </div><br>
 </header>
@@ -172,23 +194,50 @@
     
           </div>
         <!-- stretched div -->
-    <div class="row row-cols-1 row-cols-md-2 g-4 pt-4 px-5 ">
-      <div class="col ">
-        <div class="card   bg-info-subtle bg-primary-custom custom-height-strecthed-div">
+        <!-- class=" row row-cols-1 row-cols-md-2 g-4 pt-4 px-5"  -->
+    <div   class=" d-flex justify-content-around row row-cols-1 row-cols-md-2 g-4 pt-4 px-3">
+      <!-- <div class="col ">
+        <div class="card  mblrespnsive bg-info-subtle bg-primary-custom custom-height-strecthed-div">
      
-          <div class="card-body   ">
+          <div class="card-body ">
             <h5 class="card-title text-primary">Comment for top management</h5>
             <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae necessitatibus sit dolores maxime praesentium inventore eum pariatur aspernatur magnam quaerat, veniam dignissimos laudantium assumenda ab! Tenetur possimus tempora ad quaerat unde ex, rerum minima mollitia perferendis odio reiciendis aperiam eos recusandae ipsam ea, corrupti quas porro. Eos repudiandae nemo aspernatur?
             </p>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card  bg-info-subtle bg-primary-custom custom-height-strecthed-div">
+      </div> -->
+      <!-- <div class="col ">
+        <div class="card  mblrespnsive  bg-info-subtle bg-primary-custom custom-height-strecthed-div">
          
           <div class="card-body  ">
             <h5 class="card-title text-primary">Comment for sales executive</h5>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed ex aliquid eius quos, at repellat voluptas officiis? Minima libero facilis id assumenda voluptatibus impedit, quas et dolor quaerat, quam placeat. Commodi nobis perspiciatis doloribus blanditiis vel, dolorem nemo recusandae fugit distinctio, omnis aliquam cupiditate amet id, eaque hic voluptatibus mollitia.</p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae necessitatibus sit dolores maxime praesentium inventore eum pariatur aspernatur magnam quaerat, veniam dignissimos laudantium assumenda ab! Tenetur possimus tempora ad quaerat unde ex, rerum minima mollitia perferendis odio reiciendis aperiam eos recusandae ipsam ea, corrupti quas porro. Eos repudiandae nemo aspernatur?</p>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="card mb-3  bg-primary-custom custom-stretched-div text-center" style="max-width: 860px;">
+        <div class="row g-0">
+          
+          <div class="col-md-12">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Comment for sales executive</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates, alias laboriosam porro exercitationem voluptate qui dolore amet quaerat impedit aliquam nisi provident tempore distinctio? Quo iure, repellendus inventore tempora error ut voluptate culpa saepe sint recusandae illum eum consequatur. Quia qui nostrum eius doloribus nesciunt ab deleniti rerum aliquam fuga, sunt quo voluptatibus tempora et tempore cupiditate quos unde vero! Facilis quas deleniti quam labore earum sit esse reiciendis.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3  bg-primary-custom custom-stretched-div text-center" style="max-width: 860px;">
+        <div class="row g-0">
+          
+          <div class="col-md-12">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Comment for sales executive</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae necessitatibus sit dolores maxime praesentium inventore eum pariatur aspernatur magnam quaerat, veniam dignissimos laudantium assumenda ab! Tenetur possimus tempora ad quaerat unde ex, rerum minima mollitia perferendis odio reiciendis aperiam eos recusandae ipsam ea, corrupti quas porro. Eos repudiandae nemo aspernatur?</p>
+              
+            </div>
           </div>
         </div>
       </div>
@@ -203,179 +252,181 @@
          <thead > 
            <tr class="bg-info-subtle text-center">
 
-           <th style="border-right: 1px solid black;" >Sl No</th>
-           <th style="border-right: 1px solid black;">Lead name</th>
-           <th style="border-right: 1px solid black;"> Created Date</th>
-           <th style="border-right: 1px solid black;"> Comment for top management</th>
-           <th style="border-right: 1px solid black;"> Comment for sales executive</th>
-           <th style="border-right: 1px solid black;"> Rating out of 10(Realtime Bidding)</th>
-           <th style="border-right: 1px solid black;"> Rating out of 10(Picking up the right project)</th>
-           <th style="border-right: 1px solid black;"> Rating out of 10(Bid Quality)</th>
-           <th style="border-right: 1px solid black;"> Rating out of 10(Quantity Of Bid)</th>
-           <th style="border-right: 1px solid black;"> Rating out of 10(Catching Up)</th>
+           <th >Sl No </th>
+           <th >Lead name</th>
+           <th >Created Date</th>
+           <th >Comment for top management  </th>
+        
+           <th >Comment for sales executive</th>
+          
+           <th > Rating out of 10(Realtime Bidding)</th>
+           <th > Rating out of 10(Picking up the right project)</th>
+           <th > Rating out of 10(Bid Quality)</th>
+           <th > Rating out of 10(Quantity Of Bid)</th>
+           <th > Rating out of 10(Catching Up)</th>
            <th > Final Rating </th>
            </tr>
        </thead>
          <tbody class=" text-center">
-             <tr >
-               <td style="border-right: 1px solid black;">Row 1, Column 1</td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
+             <tr>
+               <td>Row 1, Column 1</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
                <td></td>
              </tr>
              <tr class="bg-info-subtle">
               
-               <td style="border-right: 1px solid black;">Row 2, Column 1</td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
+               <td >Row 2, Column 1</td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
                <td ></td>
              </tr>
              <tr>
                
-               <td style="border-right: 1px solid black;">Row 3, Column 1</td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
+               <td >Row 3, Column 1</td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
                <td ></td>
              </tr>
              <tr class="bg-info-subtle">
-               <td style="border-right: 1px solid black;">Row 4, Column 1</td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
+               <td >Row 4, Column 1</td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
                <td ></td>
              </tr>
              <tr>
-               <td style="border-right: 1px solid black">Row 5, Column 1</td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"> </td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
+               <td >Row 5, Column 1</td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td > </td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
              
                <td ></td>
              </tr>
              <tr class="bg-info-subtle">
-               <td style="border-right: 1px solid black;">Row 6, Column 1</td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
+               <td >Row 6, Column 1</td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
                <td ></td>
              </tr>
              <tr>
              
-               <td  style="border-right: 1px solid black;">Row 7, Column 2</td>
-               <td  style="border-right: 1px solid black;"></td>
-               <td  style="border-right: 1px solid black;"></td>
-               <td  style="border-right: 1px solid black;"></td>
-               <td  style="border-right: 1px solid black;"></td>
-               <td  style="border-right: 1px solid black;"></td>
-               <td  style="border-right: 1px solid black;"></td>
-               <td  style="border-right: 1px solid black;"></td>
-               <td  style="border-right: 1px solid black;"></td>
-               <td  style="border-right: 1px solid black;"></td>
+               <td  >Row 7, Column 2</td>
+               <td  ></td>
+               <td  ></td>
+               <td  ></td>
+               <td  ></td>
+               <td  ></td>
+               <td  ></td>
+               <td  ></td>
+               <td  ></td>
+               <td  ></td>
                <td></td>
              </tr>
              <tr class="bg-info-subtle">
-               <td style="border-right: 1px solid black;">Row 8, Column 1</td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
+               <td >Row 8, Column 1</td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
                <td ></td>
              </tr>
              <tr>
-               <td style="border-right: 1px solid black;">Row 9, Column 1</td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
+               <td >Row 9, Column 1</td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
                <td ></td>
              </tr> 
              <tr class="bg-info-subtle">
-               <td style="border-right: 1px solid black;">Row 10, Column 1</td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
+               <td >Row 10, Column 1</td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
                <td ></td>
              </tr>
              <tr >
-               <td style="border-right: 1px solid black;">Row 11, Column 1</td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
+               <td >Row 11, Column 1</td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
                <td ></td>
              </tr>
 
              <tr class="bg-info-subtle">
-               <td style="border-right: 1px solid black;">Row 12 , Column 1</td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
-               <td style="border-right: 1px solid black;"></td>
+               <td >Row 12 , Column 1</td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td> 
+               <td ></td>
+               <td ></td>
+               <td ></td>
+               <td ></td>
                <td ></td>
              </tr>
             
@@ -385,7 +436,7 @@
      
    </section>
     </main>
-    <footer class="d-flex justify-content-end me-5 ">
+    <footer class="d-flex justify-content-end me-5 mblrespnsive2">
       <div class="card text-center mb-3  bg-primary-custom" style="width: 395px;">
         <div class="card-body bg-info-subtle">
           <h5 class="card-title text-primary">Report Created By</h5>
