@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .header{
+        position:sticky;
+        top: 0 ;
+    }
+</style>
+</head>
+<body>
+
+
+
+      <div class="container mt-3">
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Show a second modal and hide this one with the button below.
+
+                  <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+
+
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Open second modal</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+            <div class="table-responsive">
+                <table class="table table-primary">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="align-middle">ID</th>
+                            <th scope="col" class="align-middle">Title</th>
+                            <th scope="col" class="align-middle">Created Date</th>
+                            <th scope="col" class="align-middle">Comment for Top Management</th>
+                            <th scope="col" class="align-middle">Comment for Sales Executive</th>
+                            <th scope="col" class="align-middle">Report By</th>
+                            <th scope="col" class="align-middle">Report For</th>
+                            <th scope="col" class="align-middle">Overall Rating Out of 10 (Realtime Bidding)</th>
+                            <th scope="col" class="align-middle">Overall Rating Out of 10 (Picking up the right project)</th>
+                            <th scope="col" class="align-middle">Overall Rating Out of 10 (Bid Quality)</th>
+                            <th scope="col" class="align-middle">Overall Rating Out of 10 (Quantity of Bid)</th>
+                            <th scope="col" class="align-middle">Overall Rating Out of 10 (Catching Up)</th>
+                            <th scope="col" class="align-middle">Final Rating (Out of 10)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="">
+                            <td class="align-middle" scope="row">#1</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">build me a website</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">09-02-2023</td>
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Top Management" class="form-control" rows="5" id="comment-top-management" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Sales Executive" class="form-control" rows="5" id="comment-sales-executive" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="text-capitalize align-middle" id="reportby">Mohammad Sayeed Ullah</td>
+                            <td scope="row" class="text-capitalize align-middle" id="reportfor">Sagor Das</td>
+                            <td scope="row" class="align-middle" id="rating-1"><input type="number" name="rating-1" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-2"><input type="number" name="rating-2" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-3"><input type="number" name="rating-3" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-4"><input type="number" name="rating-4" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-5"><input type="number" name="rating-5" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-6"><input type="number" name="rating-6" placeholder="0-10" class="form-control" required></td>
+                            
+                        </tr>
+
+                        <tr class="">
+                            <td class="align-middle" scope="row">#2</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">build me a website</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">09-02-2023</td>
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Top Management" class="form-control" rows="5" id="comment-top-management" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Sales Executive" class="form-control" rows="5" id="comment-sales-executive" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="text-capitalize align-middle" id="reportby">Mohammad Sayeed Ullah</td>
+                            <td scope="row" class="text-capitalize align-middle" id="reportfor">Sagor Das</td>
+                            <td scope="row" class="align-middle" id="rating-1"><input type="number" name="rating-1" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-2"><input type="number" name="rating-2" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-3"><input type="number" name="rating-3" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-4"><input type="number" name="rating-4" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-5"><input type="number" name="rating-5" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-6"><input type="number" name="rating-6" placeholder="0-10" class="form-control" required></td>
+                            
+                        </tr>
+
+                        <tr class="">
+                            <td class="align-middle" scope="row">#3</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">build me a website</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">09-02-2023</td>
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Top Management" class="form-control" rows="5" id="comment-top-management" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Sales Executive" class="form-control" rows="5" id="comment-sales-executive" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="text-capitalize align-middle" id="reportby">Mohammad Sayeed Ullah</td>
+                            <td scope="row" class="text-capitalize align-middle" id="reportfor">Sagor Das</td>
+                            <td scope="row" class="align-middle" id="rating-1"><input type="number" name="rating-1" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-2"><input type="number" name="rating-2" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-3"><input type="number" name="rating-3" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-4"><input type="number" name="rating-4" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-5"><input type="number" name="rating-5" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-6"><input type="number" name="rating-6" placeholder="0-10" class="form-control" required></td>
+                            
+                        </tr>
+
+                        <tr class="">
+                            <td class="align-middle" scope="row">#4</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">build me a website</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">09-02-2023</td>
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Top Management" class="form-control" rows="5" id="comment-top-management" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Sales Executive" class="form-control" rows="5" id="comment-sales-executive" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="text-capitalize align-middle" id="reportby">Mohammad Sayeed Ullah</td>
+                            <td scope="row" class="text-capitalize align-middle" id="reportfor">Sagor Das</td>
+                            <td scope="row" class="align-middle" id="rating-1"><input type="number" name="rating-1" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-2"><input type="number" name="rating-2" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-3"><input type="number" name="rating-3" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-4"><input type="number" name="rating-4" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-5"><input type="number" name="rating-5" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-6"><input type="number" name="rating-6" placeholder="0-10" class="form-control" required></td>
+                            
+                        </tr>
+
+                        <tr class="">
+                            <td class="align-middle" scope="row">#5</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">build me a website</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">09-02-2023</td>
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Top Management" class="form-control" rows="5" id="comment-top-management" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Sales Executive" class="form-control" rows="5" id="comment-sales-executive" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="text-capitalize align-middle" id="reportby">Mohammad Sayeed Ullah</td>
+                            <td scope="row" class="text-capitalize align-middle" id="reportfor">Sagor Das</td>
+                            <td scope="row" class="align-middle" id="rating-1"><input type="number" name="rating-1" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-2"><input type="number" name="rating-2" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-3"><input type="number" name="rating-3" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-4"><input type="number" name="rating-4" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-5"><input type="number" name="rating-5" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-6"><input type="number" name="rating-6" placeholder="0-10" class="form-control" required></td>
+                            
+                        </tr>
+
+                        <tr class="">
+                            <td class="align-middle" scope="row">#6</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">build me a website</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">09-02-2023</td>
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Top Management" class="form-control" rows="5" id="comment-top-management" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Sales Executive" class="form-control" rows="5" id="comment-sales-executive" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="text-capitalize align-middle" id="reportby">Mohammad Sayeed Ullah</td>
+                            <td scope="row" class="text-capitalize align-middle" id="reportfor">Sagor Das</td>
+                            <td scope="row" class="align-middle" id="rating-1"><input type="number" name="rating-1" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-2"><input type="number" name="rating-2" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-3"><input type="number" name="rating-3" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-4"><input type="number" name="rating-4" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-5"><input type="number" name="rating-5" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-6"><input type="number" name="rating-6" placeholder="0-10" class="form-control" required></td>
+                            
+                        </tr>
+
+                        <tr class="">
+                            <td class="align-middle" scope="row">#7</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">build me a website</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">09-02-2023</td>
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Top Management" class="form-control" rows="5" id="comment-top-management" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Sales Executive" class="form-control" rows="5" id="comment-sales-executive" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="text-capitalize align-middle" id="reportby">Mohammad Sayeed Ullah</td>
+                            <td scope="row" class="text-capitalize align-middle" id="reportfor">Sagor Das</td>
+                            <td scope="row" class="align-middle" id="rating-1"><input type="number" name="rating-1" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-2"><input type="number" name="rating-2" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-3"><input type="number" name="rating-3" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-4"><input type="number" name="rating-4" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-5"><input type="number" name="rating-5" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-6"><input type="number" name="rating-6" placeholder="0-10" class="form-control" required></td>
+                            
+                        </tr>
+
+                        <tr class="">
+                            <td class="align-middle" scope="row">#8</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">build me a website</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">09-02-2023</td>
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Top Management" class="form-control" rows="5" id="comment-top-management" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Sales Executive" class="form-control" rows="5" id="comment-sales-executive" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="text-capitalize align-middle" id="reportby">Mohammad Sayeed Ullah</td>
+                            <td scope="row" class="text-capitalize align-middle" id="reportfor">Sagor Das</td>
+                            <td scope="row" class="align-middle" id="rating-1"><input type="number" name="rating-1" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-2"><input type="number" name="rating-2" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-3"><input type="number" name="rating-3" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-4"><input type="number" name="rating-4" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-5"><input type="number" name="rating-5" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-6"><input type="number" name="rating-6" placeholder="0-10" class="form-control" required></td>
+                            
+                        </tr>
+
+                        <tr class="">
+                            <td class="align-middle" scope="row">#9</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">build me a website</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">09-02-2023</td>
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Top Management" class="form-control" rows="5" id="comment-top-management" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Sales Executive" class="form-control" rows="5" id="comment-sales-executive" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="text-capitalize align-middle" id="reportby">Mohammad Sayeed Ullah</td>
+                            <td scope="row" class="text-capitalize align-middle" id="reportfor">Sagor Das</td>
+                            <td scope="row" class="align-middle" id="rating-1"><input type="number" name="rating-1" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-2"><input type="number" name="rating-2" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-3"><input type="number" name="rating-3" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-4"><input type="number" name="rating-4" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-5"><input type="number" name="rating-5" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-6"><input type="number" name="rating-6" placeholder="0-10" class="form-control" required></td>
+                            
+                        </tr>
+
+                        <tr class="">
+                            <td class="align-middle" scope="row">#10</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">build me a website</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">09-02-2023</td>
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Top Management" class="form-control" rows="5" id="comment-top-management" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Sales Executive" class="form-control" rows="5" id="comment-sales-executive" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="text-capitalize align-middle" id="reportby">Mohammad Sayeed Ullah</td>
+                            <td scope="row" class="text-capitalize align-middle" id="reportfor">Sagor Das</td>
+                            <td scope="row" class="align-middle" id="rating-1"><input type="number" name="rating-1" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-2"><input type="number" name="rating-2" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-3"><input type="number" name="rating-3" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-4"><input type="number" name="rating-4" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-5"><input type="number" name="rating-5" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-6"><input type="number" name="rating-6" placeholder="0-10" class="form-control" required></td>
+                            
+                        </tr>
+
+                        <tr class="">
+                            <td class="align-middle" scope="row">#11</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">build me a website</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">09-02-2023</td>
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Top Management" class="form-control" rows="5" id="comment-top-management" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Sales Executive" class="form-control" rows="5" id="comment-sales-executive" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="text-capitalize align-middle" id="reportby">Mohammad Sayeed Ullah</td>
+                            <td scope="row" class="text-capitalize align-middle" id="reportfor">Sagor Das</td>
+                            <td scope="row" class="align-middle" id="rating-1"><input type="number" name="rating-1" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-2"><input type="number" name="rating-2" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-3"><input type="number" name="rating-3" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-4"><input type="number" name="rating-4" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-5"><input type="number" name="rating-5" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-6"><input type="number" name="rating-6" placeholder="0-10" class="form-control" required></td>
+                            
+                        </tr>
+
+                        <tr class="">
+                            <td class="align-middle" scope="row">#12</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">build me a website</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">09-02-2023</td>
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Top Management" class="form-control" rows="5" id="comment-top-management" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Sales Executive" class="form-control" rows="5" id="comment-sales-executive" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="text-capitalize align-middle" id="reportby">Mohammad Sayeed Ullah</td>
+                            <td scope="row" class="text-capitalize align-middle" id="reportfor">Sagor Das</td>
+                            <td scope="row" class="align-middle" id="rating-1"><input type="number" name="rating-1" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-2"><input type="number" name="rating-2" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-3"><input type="number" name="rating-3" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-4"><input type="number" name="rating-4" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-5"><input type="number" name="rating-5" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-6"><input type="number" name="rating-6" placeholder="0-10" class="form-control" required></td>
+                            
+                        </tr>
+
+                        <tr class="">
+                            <td class="align-middle" scope="row">#13</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">build me a website</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">09-02-2023</td>
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Top Management" class="form-control" rows="5" id="comment-top-management" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Sales Executive" class="form-control" rows="5" id="comment-sales-executive" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="text-capitalize align-middle" id="reportby">Mohammad Sayeed Ullah</td>
+                            <td scope="row" class="text-capitalize align-middle" id="reportfor">Sagor Das</td>
+                            <td scope="row" class="align-middle" id="rating-1"><input type="number" name="rating-1" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-2"><input type="number" name="rating-2" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-3"><input type="number" name="rating-3" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-4"><input type="number" name="rating-4" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-5"><input type="number" name="rating-5" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-6"><input type="number" name="rating-6" placeholder="0-10" class="form-control" required></td>
+                            
+                        </tr>
+
+                        <tr class="">
+                            <td class="align-middle" scope="row">#14</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">build me a website</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">09-02-2023</td>
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Top Management" class="form-control" rows="5" id="comment-top-management" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Sales Executive" class="form-control" rows="5" id="comment-sales-executive" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="text-capitalize align-middle" id="reportby">Mohammad Sayeed Ullah</td>
+                            <td scope="row" class="text-capitalize align-middle" id="reportfor">Sagor Das</td>
+                            <td scope="row" class="align-middle" id="rating-1"><input type="number" name="rating-1" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-2"><input type="number" name="rating-2" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-3"><input type="number" name="rating-3" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-4"><input type="number" name="rating-4" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-5"><input type="number" name="rating-5" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-6"><input type="number" name="rating-6" placeholder="0-10" class="form-control" required></td>
+                            
+                        </tr>
+
+                        <tr class="">
+                            <td class="align-middle" scope="row">#15</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">build me a website</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">09-02-2023</td>
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Top Management" class="form-control" rows="5" id="comment-top-management" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Sales Executive" class="form-control" rows="5" id="comment-sales-executive" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="text-capitalize align-middle" id="reportby">Mohammad Sayeed Ullah</td>
+                            <td scope="row" class="text-capitalize align-middle" id="reportfor">Sagor Das</td>
+                            <td scope="row" class="align-middle" id="rating-1"><input type="number" name="rating-1" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-2"><input type="number" name="rating-2" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-3"><input type="number" name="rating-3" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-4"><input type="number" name="rating-4" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-5"><input type="number" name="rating-5" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-6"><input type="number" name="rating-6" placeholder="0-10" class="form-control" required></td>
+                            
+                        </tr>
+
+                        <tr class="">
+                            <td class="align-middle" scope="row">#16</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">build me a website</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">09-02-2023</td>
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Top Management" class="form-control" rows="5" id="comment-top-management" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Sales Executive" class="form-control" rows="5" id="comment-sales-executive" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="text-capitalize align-middle" id="reportby">Mohammad Sayeed Ullah</td>
+                            <td scope="row" class="text-capitalize align-middle" id="reportfor">Sagor Das</td>
+                            <td scope="row" class="align-middle" id="rating-1"><input type="number" name="rating-1" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-2"><input type="number" name="rating-2" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-3"><input type="number" name="rating-3" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-4"><input type="number" name="rating-4" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-5"><input type="number" name="rating-5" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-6"><input type="number" name="rating-6" placeholder="0-10" class="form-control" required></td>
+                            
+                        </tr>
+
+                        <tr class="">
+                            <td class="align-middle" scope="row">#17</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">build me a website</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">09-02-2023</td>
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Top Management" class="form-control" rows="5" id="comment-top-management" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Sales Executive" class="form-control" rows="5" id="comment-sales-executive" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="text-capitalize align-middle" id="reportby">Mohammad Sayeed Ullah</td>
+                            <td scope="row" class="text-capitalize align-middle" id="reportfor">Sagor Das</td>
+                            <td scope="row" class="align-middle" id="rating-1"><input type="number" name="rating-1" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-2"><input type="number" name="rating-2" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-3"><input type="number" name="rating-3" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-4"><input type="number" name="rating-4" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-5"><input type="number" name="rating-5" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-6"><input type="number" name="rating-6" placeholder="0-10" class="form-control" required></td>
+                            
+                        </tr>
+
+                        <tr class="">
+                            <td class="align-middle" scope="row">#18</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">build me a website</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">09-02-2023</td>
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Top Management" class="form-control" rows="5" id="comment-top-management" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Sales Executive" class="form-control" rows="5" id="comment-sales-executive" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="text-capitalize align-middle" id="reportby">Mohammad Sayeed Ullah</td>
+                            <td scope="row" class="text-capitalize align-middle" id="reportfor">Sagor Das</td>
+                            <td scope="row" class="align-middle" id="rating-1"><input type="number" name="rating-1" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-2"><input type="number" name="rating-2" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-3"><input type="number" name="rating-3" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-4"><input type="number" name="rating-4" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-5"><input type="number" name="rating-5" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-6"><input type="number" name="rating-6" placeholder="0-10" class="form-control" required></td>
+                            
+                        </tr>
+
+                        <tr class="">
+                            <td class="align-middle" scope="row">#19</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">build me a website</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">09-02-2023</td>
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Top Management" class="form-control" rows="5" id="comment-top-management" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Sales Executive" class="form-control" rows="5" id="comment-sales-executive" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="text-capitalize align-middle" id="reportby">Mohammad Sayeed Ullah</td>
+                            <td scope="row" class="text-capitalize align-middle" id="reportfor">Sagor Das</td>
+                            <td scope="row" class="align-middle" id="rating-1"><input type="number" name="rating-1" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-2"><input type="number" name="rating-2" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-3"><input type="number" name="rating-3" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-4"><input type="number" name="rating-4" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-5"><input type="number" name="rating-5" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-6"><input type="number" name="rating-6" placeholder="0-10" class="form-control" required></td>
+                            
+                        </tr>
+
+                        <tr class="">
+                            <td class="align-middle" scope="row">#20</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">build me a website</td>
+                            <td scope="row" class="text-capitalize align-middle" id="">09-02-2023</td>
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Top Management" class="form-control" rows="5" id="comment-top-management" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="align-middle">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea placeholder="Comment for Sales Executive" class="form-control" rows="5" id="comment-sales-executive" required></textarea>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td scope="row" class="text-capitalize align-middle" id="reportby">Mohammad Sayeed Ullah</td>
+                            <td scope="row" class="text-capitalize align-middle" id="reportfor">Sagor Das</td>
+                            <td scope="row" class="align-middle" id="rating-1"><input type="number" name="rating-1" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-2"><input type="number" name="rating-2" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-3"><input type="number" name="rating-3" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-4"><input type="number" name="rating-4" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-5"><input type="number" name="rating-5" placeholder="0-10" class="form-control" required></td>
+                            <td scope="row" class="align-middle" id="rating-6"><input type="number" name="rating-6" placeholder="0-10" class="form-control" required></td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            </div>
+            <div class="modal-footer">
+             
+              <a class="btn btn-primary" href="report-page.html" role="button">Create Report</a>
+              
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a>
+
+
+</body>
+</html>
